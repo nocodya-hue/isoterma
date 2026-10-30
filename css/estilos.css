@@ -515,6 +515,13 @@ html[data-estacion="verano"] .estacion-card--verano { order: -1; }
 
 @media (max-width: 1100px) {
   .menu a[href="#todo-el-ano"] { display: none; }
+  /* En tablet el recuadro de la estación va debajo del texto, no encima */
+  .hero__in { padding-bottom: 28px; }
+  .lectura { position: relative; right: auto; bottom: auto; width: auto; max-width: 480px; margin: 0 var(--gutter) 40px; padding: 14px 16px 16px; }
+  .lectura__datos { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 14px; }
+  .lectura__fila { flex-direction: column; align-items: flex-start; gap: 3px; }
+  .lectura__fila--dentro { align-items: flex-end; }
+  .lectura__barra { margin: 0; }
   .garantias__in { grid-template-columns: 1fr 1fr; }
   .garantia:nth-child(3) { padding-left: 0; border-left: 0; }
   .garantia:nth-child(n+3) { border-top: 1px solid var(--linea-osc); }
